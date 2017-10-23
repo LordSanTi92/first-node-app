@@ -33,7 +33,11 @@ app.get('/', (req, res)=> {
         welcomeText:"Welcome to home page"
     })
 })
-
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'Projects',
+    });
+})
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
         pageTitle:'About Page',
